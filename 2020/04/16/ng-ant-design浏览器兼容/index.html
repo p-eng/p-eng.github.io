@@ -1,0 +1,949 @@
+<!--
+	作者：Sariay
+	时间：2018-09-25
+	描述：There may be a bug, but don't worry, QiLing(器灵) says that it can work normally!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head><meta name="generator" content="Hexo 3.9.0">
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      ng.ant.design浏览器兼容 | Peng
+    
+  </title>
+  <meta name="author" content="peng">
+  <meta name="keywords" content>
+  <meta name="description" content>
+	<!-- favicon -->
+  <link rel="shortcut icon" href="../../../../img/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../../css/Annie.css">
+  
+  <!-- jquery -->
+	<script src="../../../../js/jquery.min.js"></script>
+
+  <!-- leancloud -->
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script src="../../../../js/leancloud.js"></script>
+</head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground" data-img-mode="normal" data-normal-src="../../../../img/1.jpg" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
+	<div class="mask">
+		<!-- Logo and navigation -->
+		<div class="h-header">
+			<div id="logo">
+				<a href="/">
+						
+						<img src="../../../../img/logo.png" alt="Logo">
+					
+				</a>
+			</div>
+			
+			<div id="navigation-show">
+				<ul>
+	
+		<li class="menu-home">
+			<a href="../../../../index.html" class="menu-item-home">主页</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="../../../../archives" class="menu-item-archive">归档</a>
+		</li>
+	
+
+	
+</ul>
+			</div>				
+		</div>
+
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<p class="motto"></p>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</a>
+
+			
+				<!-- 
+	This is only a demo, please go to "https://time.is" to set your city time! 
+-->
+<style type="text/css">
+	.header-date {
+		font-size: 1.6rem;
+		color: #fff;
+		position: absolute;
+		bottom: 5px;
+		right: 1rem;
+		writing-mode: tb-rl;
+	}	
+	
+	.header-date a {
+		border-bottom: none;
+	}
+
+	@media only screen and (max-width: 768 ) {
+		.header-date {
+			font-size: 1rem;
+		}			
+	}
+</style>
+<div class="header-date">
+	<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow" ></a>
+	<span id="Beijing_z43d"></span>
+</div>
+<script src="//widget.time.is/zh.js"></script>
+<script>
+	time_is_widget.init({
+		Beijing_z43d:{
+			template:"DATE", 
+			date_format:"year年 monthname dnum日"
+		}
+	});
+</script>
+			
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><h1>0.0%</h1></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			当前文章&nbsp;:&nbsp;《ng.ant.design浏览器兼容》
+		
+	</p>
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<h3>Navigation</h3>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	<div class="nav-body">
+		<ul>
+	
+		<li class="menu-home">
+			<a href="../../../../index.html" class="menu-item-home">主页</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="../../../../archives" class="menu-item-archive">归档</a>
+		</li>
+	
+
+	
+</ul>
+	</div>
+	<div class="nav-footer">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-weibo"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-pinterest"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="../../../../atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+		<script src="../../../../plugin/toc/katelog.min.js"></script>
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+	<div class="article-title">
+		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+		
+	<a href="" itemprop="url">
+		ng.ant.design浏览器兼容
+	</a>
+
+	</div>
+
+	<div class="article-meta">
+		<span>
+			<i class="fa fa-calendar"></i>
+			
+
+
+	发布于
+
+	<a href="" itemprop="url">
+		<time datetime="2020-04-16T11:07:27.000Z" itemprop="datePublished">
+	  		2020-04-16
+	  </time>
+	</a>
+	&nbsp;
+
+
+
+
+
+			
+
+
+
+
+	更新于
+
+	<a href="" itemprop="url">
+		<time datetime="2020-04-16T11:07:27.000Z" itemprop="dateUpdated">
+	  		2020-04-16
+	  </time>
+	</a> 
+
+
+
+		</span>
+		<span>
+			<i class="fa fa-tags"></i>
+					
+		</span>
+		
+		
+
+
+
+	</div>
+
+	<div class="article-content" id="article-content">
+		<h1 id="兼容"><a href="#兼容" class="headerlink" title="兼容"></a>兼容</h1><h2 id="IE滚动条"><a href="#IE滚动条" class="headerlink" title="IE滚动条"></a>IE滚动条</h2><h3 id="级联选择"><a href="#级联选择" class="headerlink" title="级联选择"></a>级联选择</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">::ng-deep .cdk-overlay-pane</span><br><span class="line">    overflow: hidden !important;</span><br><span class="line">    border: none !important;</span><br><span class="line">    .ant-cascader-menus</span><br><span class="line">        overflow: hidden !important;</span><br></pre></td></tr></table></figure>
+<h3 id="input有err提示时"><a href="#input有err提示时" class="headerlink" title="input有err提示时"></a>input有err提示时</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;nz-form-item&gt;</span><br><span class="line">  &lt;nz-form-label [nzSm]=&quot;4&quot; [nzXs]=&quot;24&quot; nzRequired nzFor=&quot;name&quot;&gt;姓名&lt;/nz-form-label&gt;</span><br><span class="line">  &lt;nz-form-control class=&quot;overflowhidden&quot; [nzSm]=&quot;16&quot; [nzXs]=&quot;24&quot; nzErrorTip=&quot;请输入姓名!&quot;&gt;</span><br><span class="line">    &lt;input nz-input formControlName=&quot;name&quot; id=&quot;name&quot; maxlength=&quot;11&quot; /&gt;</span><br><span class="line">  &lt;/nz-form-control&gt;</span><br><span class="line">&lt;/nz-form-item&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.overflowhidden &#123;</span><br><span class="line">    overflow hidden</span><br><span class="line">    div &#123;</span><br><span class="line">        overflow hidden</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Safari有Modal元素但是不显示"><a href="#Safari有Modal元素但是不显示" class="headerlink" title="Safari有Modal元素但是不显示"></a>Safari有Modal元素但是不显示</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">.mymodalbox &#123;</span><br><span class="line">    position: fixed;</span><br><span class="line">    top 0</span><br><span class="line">    left -100vw</span><br><span class="line">    width: 100vw</span><br><span class="line">    height: 100vh</span><br><span class="line">    background: rgba(0, 0, 0, .35)</span><br><span class="line">    z-index: 1000</span><br><span class="line">    overflow hidden</span><br><span class="line">    &amp;.show &#123;</span><br><span class="line">        left 0</span><br><span class="line">        .my-modal &#123;</span><br><span class="line">            left 50%    </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    .my-modal &#123;</span><br><span class="line">        position: fixed;</span><br><span class="line">        top 80px</span><br><span class="line">        left -100vw</span><br><span class="line">        transform: translate(-50%, 0)</span><br><span class="line">        width 520px</span><br><span class="line">        background: #fff</span><br><span class="line">        box-shadow: 0 4px 12px rgba(0,0,0,.15);</span><br><span class="line">        border-radius: 4px;</span><br><span class="line">        .modal-header &#123;</span><br><span class="line">            padding: 16px 24px;</span><br><span class="line">            color: rgba(0,0,0,.65);</span><br><span class="line">            background: #fff;</span><br><span class="line">            border-bottom: 1px solid #e8e8e8;</span><br><span class="line">            border-radius: 4px 4px 0 0;</span><br><span class="line">            margin: 0;</span><br><span class="line">            color: rgba(0,0,0,.85);</span><br><span class="line">            font-weight: 500;</span><br><span class="line">            font-size: 16px;</span><br><span class="line">            line-height: 22px;</span><br><span class="line">            word-wrap: break-word;</span><br><span class="line">            height: 64px;</span><br><span class="line">        &#125;</span><br><span class="line">        .modal-body &#123;</span><br><span class="line">            padding: 24px;</span><br><span class="line">            font-size: 14px;</span><br><span class="line">            line-height: 1.5;</span><br><span class="line">            word-wrap: break-word;</span><br><span class="line">            min-height 375px</span><br><span class="line">            max-height calc(100vh - 280px)</span><br><span class="line">            input &#123;</span><br><span class="line">                position: relative;</span><br><span class="line">                display: inline-block;</span><br><span class="line">                width: 100%;</span><br><span class="line">                height: 32px;</span><br><span class="line">                padding: 4px 11px;</span><br><span class="line">                color: rgba(0,0,0,.65);</span><br><span class="line">                font-size: 14px;</span><br><span class="line">                line-height: 1.5;</span><br><span class="line">                background-color: #fff;</span><br><span class="line">                background-image: none;</span><br><span class="line">                border: 1px solid #d9d9d9;</span><br><span class="line">                border-radius: 4px;</span><br><span class="line">                transition: all .3s;</span><br><span class="line">                margin: 0;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        .modal-footer &#123;</span><br><span class="line">            padding: 10px 16px;</span><br><span class="line">            text-align: right;</span><br><span class="line">            background: 0 0;</span><br><span class="line">            border-top: 1px solid #e8e8e8;</span><br><span class="line">            border-radius: 0 0 4px 4px;</span><br><span class="line">            height: 66px;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;mymodalbox&quot; [ngClass]=&quot;&#123;show: isVisible&#125;&quot; (click)=&quot;handleCancel()&quot; (wheel)=&quot;cancelBubble($event)&quot; (scroll)=&quot;cancelBubble($event)&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;my-modal&quot; (click)=&quot;cancelBubble($event)&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;cloas&quot;&gt;</span><br><span class="line">      &lt;button (click)=&quot;handleCancel()&quot; aria-label=&quot;Close&quot; class=&quot;ant-modal-close ng-star-inserted&quot;&gt;</span><br><span class="line">        &lt;span class=&quot;ant-modal-close-x&quot;&gt;&lt;i class=&quot;anticon ant-modal-close-icon anticon-close ng-star-inserted&quot; nz-icon=&quot;&quot;&gt;&lt;svg viewBox=&quot;64 64 896 896&quot; fill=&quot;currentColor&quot; width=&quot;1em&quot; height=&quot;1em&quot; data-icon=&quot;close&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/i&gt;&lt;/span&gt;</span><br><span class="line">      &lt;/button&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;modal-header&quot;&gt;&#123;&#123;visibleTitle&#125;&#125;&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;modal-body&quot;&gt;</span><br><span class="line">        展示内容</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;modal-footer&quot;&gt;</span><br><span class="line">      &lt;button nz-button=&quot;&quot; class=&quot;ant-btn ng-star-inserted ant-btn-primary&quot; (click)=&quot;handleOk(validateForm.value)&quot;&gt;</span><br><span class="line">        &lt;span&gt; 确定 &lt;/span&gt;</span><br><span class="line">      &lt;/button&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;  </span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cancelBubble(e) &#123;</span><br><span class="line">  e = e||window.event;</span><br><span class="line">  if(e.stopPropagation)&#123; //通过浏览器能力进行兼容性检测</span><br><span class="line">      e.stopPropagation(); </span><br><span class="line">  &#125;else if(e.cancelBubble)&#123;</span><br><span class="line">      e.cancelBubble = true;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+	
+	</div>
+	
+	<div id="current-post-cover" data-scr="../../../../img/cart_cover.jpg"></div>
+
+	<!-- relate post, comment...-->
+	<div class="investment-container">
+		<div class="investment-header">
+			<div class="investment-title-1">
+				<div class="on">相关文章</div>
+				<div>评论</div>
+				<div>分享</div>
+			</div>
+			<div class="investment-title-2">	            
+				
+	<span>
+		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
+		
+		
+			<a href="../hello-world/" title="Hello World" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+			</div>	
+		</div>
+		
+		<div class="investment-content">
+			<div class="investment-content-list">
+				
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="../hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 16日, 2020				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="../hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="../../../../2019/11/21/sublime安装插件/" title="sublime安装插件">
+								sublime安装插件			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								import urllib.request,os; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); ur...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="../../../../2019/11/21/sublime安装插件/" title="sublime安装插件">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="sublime安装插件"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="../../../../2019/11/21/VMware安装linux时提示pane-is-dead/" title="VMware安装linux时提示pane_is_dead">
+								VMware安装linux时提示pane_is_dead			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								
+安装时选择自定义配置
+点击CD/DVD(IDE)
+将默认镜像替换为要安装的镜像
+启动虚拟机
+
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="../../../../2019/11/21/VMware安装linux时提示pane-is-dead/" title="VMware安装linux时提示pane_is_dead">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="VMware安装linux时提示pane_is_dead"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="../../../../2019/11/21/dead/" title="dead">
+								dead			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="../../../../2019/11/21/dead/" title="dead">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="dead"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="../../../../2019/11/21/卸载npm模块成功后模块还在/" title="卸载npm模块成功后模块还在">
+								卸载npm模块成功后模块还在			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								背景为了解决全局安装每次都要加sudo的问题，配置了环境变量export PATH=~/.npm-global/bin:$PATH。
+问题运行taro项目时因为本地taro版本(1.3.19)与项目中的taro版本(1.3.9)不符合...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="../../../../2019/11/21/卸载npm模块成功后模块还在/" title="卸载npm模块成功后模块还在">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="卸载npm模块成功后模块还在"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="../../../../2019/11/21/编辑器配置-快速打开/" title="编辑器配置-快速打开">
+								编辑器配置-快速打开			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								
+atom
+atom .
+
+
+vscode
+安装：
+打开VSCode
+Command + Shift + P
+输入Shell Command: Install ‘code’ command in PATH
+
+
+使用
+code .
+
+
+...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="../../../../2019/11/21/编辑器配置-快速打开/" title="编辑器配置-快速打开">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="编辑器配置-快速打开"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="../../../../2019/10/16/dart学习/" title="dart学习">
+								dart学习			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 16日, 2019				
+							</p>
+							<p class="relate-post-content">
+								内置类型数值型 - Number字符串 - String布尔型 - Boolean列表 - List创建List
+普通创建
+
+1var list = [1, 2, 3];
+
+创建不可变所谓List1var List = const [...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="../../../../2019/10/16/dart学习/" title="dart学习">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="dart学习"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="../../../../2019/10/16/Mac不能写入NTFS的磁盘/" title="Mac不能写入NTFS的磁盘">
+								Mac不能写入NTFS的磁盘			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 16日, 2019				
+							</p>
+							<p class="relate-post-content">
+								到希捷官网下载NTFS_for_Mac即可。
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="../../../../2019/10/16/Mac不能写入NTFS的磁盘/" title="Mac不能写入NTFS的磁盘">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Mac不能写入NTFS的磁盘"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="../../../../2019/10/12/优秀的人/" title="优秀的人">
+								优秀的人			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 12日, 2019				
+							</p>
+							<p class="relate-post-content">
+								
+
+
+姓名
+地址
+
+
+
+
+阮一峰
+ruanyifeng.com
+
+
+廖雪峰
+liaoxuefeng.com
+
+
+技术胖
+jspang.com
+
+
+
+
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="../../../../2019/10/12/优秀的人/" title="优秀的人">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="优秀的人"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="../../../../2019/10/10/zsh-command-not-found-yarn/" title="zsh:_command_not_found:_yarn">
+								zsh:_command_not_found:_yarn			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 10日, 2019				
+							</p>
+							<p class="relate-post-content">
+								123456789101112131415161718192021222324peng@peng ~ % npm install -g yarn/Users/peng/.npm-global/bin/yarn -&gt; /Users...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="../../../../2019/10/10/zsh-command-not-found-yarn/" title="zsh:_command_not_found:_yarn">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="zsh:_command_not_found:_yarn"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+		</ul>
+	
+</div>	
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-comment">
+
+	
+
+		
+
+			<!-- I don't know !!!-->
+			<div>Please check the comment setting in config.yml of hexo-theme-Annie!</div>
+			
+		
+		
+	
+
+</div>
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+			</div>
+		</div>	
+	</div>
+	</div>
+</div>
+
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+
+<!-- show math formula -->
+
+
+
+	 
+	<script src="../../../../plugin/clipboard/clipboard.js"></script>
+	<script>
+		// Copy code !
+	    function codePreprocessing() {
+	        $("#article-content .highlight").each(function() {
+
+	            $(this).wrap('<div id="post-code"></div>');
+
+	        })
+
+	        $("#article-content #post-code").each(function() {
+
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            var temp = $(this).next().attr('class'),
+	                language = ((temp.length > 9) && (temp != null)) ? temp.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+
+	            $(this).append('<span class="copy-btn"><i class="fa fa-copy" aria-hidden="true"></i></span>');
+
+	        });
+	    }
+
+		function codeCopy() {
+		    $('#article-content #post-code').each(function(i) {
+		        var codeCopyId = 'codeCopy-' + i;
+
+		        var codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+
+		    
+			var clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn copy-status');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');
+			    
+			});
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		
+
+		}
+
+		if ($('.layout-post').length) {
+		    codePreprocessing();
+		    codeCopy();
+		} 
+	</script>
+
+
+
+
+
+<link rel="stylesheet" href="../../../../plugin/fancybox/jquery.fancybox.css">
+<script src="../../../../plugin/fancybox/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	var titleID = $('.article-title a'),
+		imageID = $('.article-content img'),
+		videoID = $('.article-content video');
+
+	var postTitle = titleID.text() ? titleID.text() : "No post title!";
+
+	imageID.each(function() {
+		var imgPath = $(this).attr('src'),
+			imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox="gallery" data-caption=" 《 ' + postTitle + ' 》 ' + imgTitle + ' "  href=" ' + imgPath + ' "> </a>');
+	});
+
+	videoID.each(function() {
+		var videoPath = $(this).attr('src');
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+	});
+	//TODO：支持html5 video
+
+	if($('#layout-post').length) {
+		$('[data-fancybox="gallery"]').fancybox({
+			loop: true,
+			buttons: [
+				"zoom",
+				"share",
+				"slideShow",
+				"fullScreen",
+				//"download",
+				"thumbs",
+				"close"
+			],
+			protect: false
+		});
+	}
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div class="social">
+		<ul>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-weibo"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-pinterest"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="../../../../atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+		
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2020, content by peng. All Rights Reserved.
+			
+			
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span id="busuanzi_container_page_pv">
+	  		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+		</span>
+
+	
+
+
+
+
+		</p>
+		<p>
+			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- set '1' to show motto in all pages! -->
+
+	<script src="../../../../plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		$(".motto").html( getMingYanContent() );
+	</script>	
+
+
+
+
+
+<!-- love effect -->
+
+	<script src="../../../../plugin/love/love.js"></script>
+
+
+<!-- back to top -->
+
+	
+	<div id="totop">
+  		<a href="javascript:;"  name="TOTOP" class="fa fa-arrow-up" ></a>
+	</div>
+
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<script src="../../../../plugin/vibrant/vibrant.js"></script>
+<script src="../../../../plugin/chinese/chinese.js"></script>
+<script src="../../../../plugin/imgLazyLoader/yall.min.js"></script>
+<script src="../../../../plugin/imgResize/jquery.resizeimagetoparent.min.js"></script>
+<script src="../../../../plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="../../../../js/resizediv.js"></script>
+<script src="../../../../js/main.js"></script>
+	</body>	
+</html>
